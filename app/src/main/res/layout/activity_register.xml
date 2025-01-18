@@ -8,7 +8,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:gravity="center"
 android:orientation="vertical"
-android:background=""
+
 tools:context=".LoginActivity">
 
 <androidx.cardview.widget.CardView
@@ -17,7 +17,7 @@ tools:context=".LoginActivity">
     android:layout_margin="30dp"
     app:cardCornerRadius="30dp"
     app:cardElevation="20dp"
-    android:background=" ">
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,16 +44,16 @@ tools:context=".LoginActivity">
             android:fontFamily="serif"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:drawableLeft="   "
+            
             android:padding="2dp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:id="@+id/Em_ail"
+            android:id="@+id/register_name"
             android:hint=" Enter Name"
             android:textColor="@color/gray"
-            android:background=" "
+            
             android:textColorHighlight="@color/cardview_dark_background"/>
 
         <TextView
@@ -64,48 +64,24 @@ tools:context=".LoginActivity">
             android:textSize="20dp"
             android:layout_marginTop="4dp"
             android:textStyle="bold"
-            android:drawableLeft="   "
+            
             android:padding="2dp" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:id="@+id/Email"
+            android:id="@+id/register_email"
             android:hint="Enter Email"
             android:textColor="@color/gray"
-            android:background=" "
+            
             android:textColorHighlight="@color/cardview_dark_background"
-
             android:padding="7dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:drawableLeft="  "
-            android:fontFamily="serif"
-
-            android:text=" Employee Id"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:id="@+id/Emp_id"
-            android:background=" "
-            android:textColorHighlight="@color/cardview_dark_background"
-            android:height="48dp"
-            android:hint="Employee ID "
-            android:padding="7dp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:drawableLeft="  "
+            
             android:fontFamily="serif"
 
             android:text=" Password:"
@@ -116,12 +92,11 @@ tools:context=".LoginActivity">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:id="@+id/pass_word"
-            android:background=" "
+            android:id="@+id/register_password"
+            
             android:textColorHighlight="@color/cardview_dark_background"
             android:inputType="textPassword"
             android:height="48dp"
-
             android:hint="Enter Password"
             android:padding="7dp"
             />
@@ -134,7 +109,7 @@ tools:context=".LoginActivity">
             android:text="REGISTER"
             android:textStyle="bold"
             android:fontFamily="serif"
-            android:id="@+id/Login_Button"
+            android:id="@+id/register_btn"
             />
 
     </LinearLayout>

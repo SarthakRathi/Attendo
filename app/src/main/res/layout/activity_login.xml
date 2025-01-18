@@ -8,7 +8,6 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background=""
     tools:context=".RegisterActivity">
 
     <androidx.cardview.widget.CardView
@@ -16,8 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
-        app:cardElevation="20dp"
-        android:background=" ">
+        app:cardElevation="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +42,6 @@
                 android:fontFamily="serif"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:drawableLeft=" "
                 android:padding="2dp" />
 
             <EditText
@@ -53,7 +50,6 @@
                 android:id="@+id/Email"
                 android:hint="Enter Email"
                 android:textColor="@color/gray"
-                android:background=" "
                 android:textColorHighlight="@color/cardview_dark_background"
 
                 android:padding="7dp"/>
@@ -65,7 +61,6 @@
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
-                android:drawableLeft="  "
                 android:padding="2dp"
 
                 />
@@ -73,7 +68,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:id="@+id/password"
-                android:background=" "
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:inputType="textPassword"
                 android:height="48dp"
