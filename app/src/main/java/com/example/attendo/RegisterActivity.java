@@ -33,13 +33,19 @@ public class RegisterActivity extends AppCompatActivity {
         password = findViewById(R.id.register_password);
         register = findViewById(R.id.register_btn);
 
-        String nametext = name.getText().toString().trim();
-        String emailtext = email.getText().toString().trim();
-        String passtext = password.getText().toString().trim();
-
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String nametext = name.getText().toString().trim();
+                String emailtext = email.getText().toString().trim();
+                String passtext = password.getText().toString().trim();
+
+                if (nametext.isEmpty() || emailtext.isEmpty() || passtext.isEmpty()) {
+                    Toast.makeText(RegisterActivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 mAuth.createUserWithEmailAndPassword(emailtext, passtext)
                         .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
