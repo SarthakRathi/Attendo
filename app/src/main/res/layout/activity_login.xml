@@ -47,7 +47,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:id="@+id/Email"
+                android:id="@+id/login_email"
                 android:hint="Enter Email"
                 android:textColor="@color/gray"
                 android:textColorHighlight="@color/cardview_dark_background"
@@ -67,7 +67,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:id="@+id/password"
+                android:id="@+id/login_password"
                 android:textColorHighlight="@color/cardview_dark_background"
                 android:inputType="textPassword"
                 android:height="48dp"
@@ -84,7 +84,7 @@
                 android:text="LOGIN"
                 android:textStyle="bold"
                 android:fontFamily="serif"
-                android:id="@+id/LoginButton"
+                android:id="@+id/login_btn"
 
                 />
 
