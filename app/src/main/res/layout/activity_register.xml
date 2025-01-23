@@ -37,15 +37,7 @@ tools:context=".LoginActivity">
             android:fontFamily="serif"
             android:paddingBottom="10dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Name:"
-            android:fontFamily="serif"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            
-            android:padding="2dp" />
+
 
         <EditText
             android:layout_width="match_parent"
@@ -56,16 +48,6 @@ tools:context=".LoginActivity">
             
             android:textColorHighlight="@color/cardview_dark_background"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=" Email:"
-            android:fontFamily="serif"
-            android:textSize="20dp"
-            android:layout_marginTop="4dp"
-            android:textStyle="bold"
-            
-            android:padding="2dp" />
 
         <EditText
             android:layout_width="match_parent"
@@ -77,17 +59,7 @@ tools:context=".LoginActivity">
             android:textColorHighlight="@color/cardview_dark_background"
             android:padding="7dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            
-            android:fontFamily="serif"
 
-            android:text=" Password:"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
 
         <EditText
             android:layout_width="match_parent"
@@ -111,6 +83,16 @@ tools:context=".LoginActivity">
             android:fontFamily="serif"
             android:id="@+id/register_btn"
             />
+
+        <TextView
+            android:id="@+id/login_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Here"
+            android:textStyle="bold"
+            android:fontFamily="serif" />
+
+
 
     </LinearLayout>
 
