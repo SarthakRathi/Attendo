@@ -46,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 return true;
             }
+            if (itemId == R.id.profile) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+                return true;
+            }
             return false;
         });
         popupMenu.show();
